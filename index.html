@@ -21,7 +21,7 @@ body {font-family: "Lato", sans-serif}
     <a href="#" class="ls-bar-item ls-button ls-padding-large">TITLE</a>
     <!-- Embark -->
      <div class="ls-dropdown-hover ls-hide-small">
-      <button class="ls-padding-large ls-button" title="More">EMBARK<i class="fa fa-caret-down"></i></button>     
+      <button class="ls-padding-large ls-button" title="embark">EMBARK<i class="fa fa-caret-down"></i></button>     
       <div class="ls-dropdown-content ls-bar-block ls-card-4">
         <a href="#" class="ls-bar-item ls-button">CAPTAIN</a>
         <a href="#" class="ls-bar-item ls-button">SHIP</a>
@@ -30,7 +30,7 @@ body {font-family: "Lato", sans-serif}
     </div>
     <!-- Outfit -->
     <div class="ls-dropdown-hover ls-hide-small">
-      <button class="ls-padding-large ls-button" title="More">Outfit<i class="fa fa-caret-down"></i></button>     
+      <button class="ls-padding-large ls-button" title="outfit">OUTFIT<i class="fa fa-caret-down"></i></button>     
       <div class="ls-dropdown-content ls-bar-block ls-card-4">
         <a href="#" class="ls-bar-item ls-button">CAPTAIN</a>
         <a href="#" class="ls-bar-item ls-button">SHIP</a>
@@ -41,14 +41,13 @@ body {font-family: "Lato", sans-serif}
     <!-- Achievements -->
     <a href="#achievements" class="ls-bar-item ls-button ls-padding-large ls-hide-small">ACHIEVEMENTS</a>
     <!-- Settings -->
-    <a href="#settings" class="ls-bar-item ls-button ls-padding-large ls-hide-small">SETTINGS</a>
     <div class="ls-dropdown-hover ls-hide-small">
-      <button class="ls-padding-large ls-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <button class="ls-padding-large ls-button" title="settings">SETTINGS<i class="fa fa-caret-down"></i></button>     
       <div class="ls-dropdown-content ls-bar-block ls-card-4">
-        <a href="#" class="ls-bar-item ls-button">Gameplay</a>
-        <a href="#" class="ls-bar-item ls-button">Audio</a>
-        <a href="#" class="ls-bar-item ls-button">Controls</a>
-        <a href="#" class="ls-bar-item ls-button">Visuals</a>
+        <a href="#" class="ls-bar-item ls-button">GAMEPLAY</a>
+        <a href="#" class="ls-bar-item ls-button">AUDIO</a>
+        <a href="#" class="ls-bar-item ls-button">CONTROLS</a>
+        <a href="#" class="ls-bar-item ls-button">VISUALS</a>
       </div>
     </div>
     <!-- About -->
@@ -57,12 +56,15 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- Navbar on small screens -->
 <div id="navDemo" class="ls-bar-block ls-black ls-hide ls-hide-large ls-hide-medium ls-top" style="margin-top:46px">
-  <a href="#band" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">MERCH</a>
+  <a href="#band" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">TITLE</a>
+  <a href="#tour" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">EMBARK</a>
+  <a href="#contact" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">OUTFIT</a>
+  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">STATISTICS</a>
+  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">ACHIEVEMENTS</a>
+  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">SETTINGS</a>
+  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">ABOUT</a>
 </div>
 
 <!-- Page content -->
@@ -70,51 +72,121 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides ls-display-container ls-center">
-    <img src="/images/game_bg.png" style="width:100%">
+    <img src="https://majorredux.github.io/laststand.github.io/images/game_bg.png" style="width:100%">
     <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <h3>BRIGHT STAR</h3>
+      <p><b>Engaging Content!</b></p>   
     </div>
   </div>
   <div class="mySlides ls-display-container ls-center">
-    <img src="/images/screen_1.png" style="width:100%">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_1.png" style="width:100%">
     <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+      <h3>SHIPS</h3>
+      <p><b>Command your own ship!</b></p>    
     </div>
   </div>
   <div class="mySlides ls-display-container ls-center">
-    <img src="/images/screen_2.png" style="width:100%">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_2.png" style="width:100%">
     <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+      <h3>COMBAT</h3>
+      <p><b>Engage in ship to ship action!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_3.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>ARMAMENTS</h3>
+      <p><b>Use different armament types!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_4.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>SURVIVE</h3>
+      <p><b>Survive waves of hostiles!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_5.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>EVADE</h3>
+      <p><b>Evade hostile fire!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_6.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>HYDROGEN</h3>
+      <p><b>Collect Hydrogen to level up!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_7.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>CUSTOMISATION</h3>
+      <p><b>Customise your build!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_8.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>UPGRADE</h3>
+      <p><b>Unlock new upgrades!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_9.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>NAVIGATE</h3>
+      <p><b>Avoid obstacles like asteroids!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides ls-display-container ls-center">
+    <img src="https://majorredux.github.io/laststand.github.io/images/screen_10.png" style="width:100%">
+    <div class="ls-display-bottommiddle ls-container ls-text-white ls-padding-32 ls-hide-small">
+      <h3>DESTROY!</h3>
+      <p><b>Destroy your enemies!</b></p>    
     </div>
   </div>
 
-  <!-- The Band Section -->
+  <!-- Main Section -->
   <div class="ls-container ls-content ls-center ls-padding-64" style="max-width:800px" id="band">
-    <h2 class="ls-wide">THE BAND</h2>
-    <p class="ls-opacity"><i>We love music</i></p>
-    <p class="ls-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h2 class="ls-wide">BRIGHT STAR: LAST STAND</h2>
+    <p class="ls-opacity"><i>Action Roguelike</i></p>
+    <p class="ls-justify">Set 30,000 years in the future in the Cygnus Sector of the Milky Way galaxy, mankind has all but forgotten about earth and the sol system. Colonists from ancient arkships have started to reach for the stars, creating new star nations. The United System of Cygnus, or the Union, continues to expand its borders, but is being pushed back by rampant piracy on the frontier border systems. The only thing standing between order and chaos are the brave men and women of the Union Navy, tasked with holding the frontier and maintaining law and order.</p> 
+    <p class="ls-justify">
+BrightStar: Last stand is an action roguelike set in the Brightstar universe. You are a Union Navy captain on the frontier with your starship in maintenance, when you are suddenly alerted to the presence of a pirate attack. With a stripped down ship, you abandon the only Union outpost in the system desperately trying to survive while gathering enough intelligence on the enemy so the relief forces stand a fighting chance.</p> 
+    <p class="ls-justify">
+The game is currently in development and this is a proof-of-concept prototype.</p>
     <div class="ls-row ls-padding-32">
       <div class="ls-third">
-        <p>Name</p>
-        <img src="/lsimages/bandmember.jpg" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
+        <p>HANDLING</p>
+        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_1.png" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
       </div>
       <div class="ls-third">
-        <p>Name</p>
-        <img src="/lsimages/bandmember.jpg" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
+        <p>ENGINES</p>
+        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_2.png" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
       </div>
       <div class="ls-third">
-        <p>Name</p>
-        <img src="/lsimages/bandmember.jpg" class="ls-round" alt="Random Name" style="width:60%">
+        <p>ARMOUR</p>
+        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_3.png" class="ls-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="ls-third">
+        <p>ARMAMENTS</p>
+        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_4.png" class="ls-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="ls-third">
+        <p>THRUSTERS</p>
+        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_5.png" class="ls-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="ls-third">
+        <p>MUNITIONS</p>
+        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_6.png" class="ls-round" alt="Random Name" style="width:60%">
       </div>
     </div>
   </div>
 
-  <!-- The Tour Section -->
+  <!-- Features Section -->
   <div class="ls-black" id="tour">
     <div class="ls-container ls-content ls-padding-64" style="max-width:800px">
       <h2 class="ls-wide ls-center">TOUR DATES</h2>
