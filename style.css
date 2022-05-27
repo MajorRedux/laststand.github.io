@@ -1,3 +1,18 @@
+/* Create a Parallax Effect */
+.bgimg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg {
+  background-image: url("https://majorredux.github.io/laststand.github.io/images/icons/bg_lower.jpg");
+  min-height: 100%;
+}
+
+
 /* Based on W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
