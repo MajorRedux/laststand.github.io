@@ -1,16 +1,4 @@
-/* Create a Parallax Effect */
-.bgimg {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-/* First image (Logo. Full height) */
-.bgimg {
-  background-image: url("https://majorredux.github.io/laststand.github.io/images/game_bg.png");
-  min-height: 100%;
-}
 
 
 /* Based on W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
@@ -44,6 +32,17 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 .ls-serif{font-family:serif}.ls-sans-serif{font-family:sans-serif}.ls-cursive{font-family:cursive}.ls-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.ls-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
+
+/* Create a Parallax Effect */
+.ls-bgimg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://majorredux.github.io/laststand.github.io/images/game_bg.png");
+  min-height: 100%;
+}
+
 .ls-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .ls-table,.ls-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.ls-table-all{border:1px solid #ccc}
 .ls-bordered tr,.ls-table-all tr{border-bottom:1px solid #ddd}.ls-striped tbody tr:nth-child(even){background-color:#f1f1f1}
