@@ -39,7 +39,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://majorredux.github.io/laststand.github.io/images/game_bg.png);
+  background-image: url("https://majorredux.github.io/laststand.github.io/images/game_bg.png");
+  background-color: #000000;
   min-height: 100%;
 }
 
