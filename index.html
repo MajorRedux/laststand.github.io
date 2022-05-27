@@ -1,127 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>BrightStar: Last Stand</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://majorredux.github.io/laststand.github.io/style.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-/* Font Family */
-body {font-family: "Josefin Sans", sans-serif}
-</style>
-<script src="https://majorredux.github.io/laststand.github.io/script.js"></script>
+<script src="script.js"></script>
 </head>
+
 <body>
 
-<!-- Navbar -->
+<!-- Navbar (sit on top) -->
 <div class="ls-top">
-  <div class="ls-bar ls-black ls-card">
-    <a class="ls-bar-item ls-button ls-padding-large ls-hide-medium ls-hide-large ls-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="ls-bar-item ls-button ls-padding-large">TITLE</a>
-    <!-- Embark -->
-     <div class="ls-dropdown-hover ls-hide-small">
-      <button class="ls-padding-large ls-button" title="embark">EMBARK<i class="fa fa-caret-down"></i></button>     
-      <div class="ls-dropdown-content ls-bar-block ls-card-4">
-        <a href="#" class="ls-bar-item ls-button">CAPTAIN</a>
-        <a href="#" class="ls-bar-item ls-button">SHIP</a>
-        <a href="#" class="ls-bar-item ls-button">SECTOR</a>
-      </div>
-    </div>
-    <!-- Outfit -->
-    <div class="ls-dropdown-hover ls-hide-small">
-      <button class="ls-padding-large ls-button" title="outfit">OUTFIT<i class="fa fa-caret-down"></i></button>     
-      <div class="ls-dropdown-content ls-bar-block ls-card-4">
-        <a href="#" class="ls-bar-item ls-button">CAPTAIN</a>
-        <a href="#" class="ls-bar-item ls-button">SHIP</a>
-      </div>
-    </div>
-    <!-- Statistics -->
-    <a href="#statistics" class="ls-bar-item ls-button ls-padding-large ls-hide-small">STATISTICS</a>    
-    <!-- Achievements -->
-    <a href="#achievements" class="ls-bar-item ls-button ls-padding-large ls-hide-small">ACHIEVEMENTS</a>
-    <!-- Settings -->
-    <div class="ls-dropdown-hover ls-hide-small">
-      <button class="ls-padding-large ls-button" title="settings">SETTINGS<i class="fa fa-caret-down"></i></button>     
-      <div class="ls-dropdown-content ls-bar-block ls-card-4">
-        <a href="#" class="ls-bar-item ls-button">GAMEPLAY</a>
-        <a href="#" class="ls-bar-item ls-button">AUDIO</a>
-        <a href="#" class="ls-bar-item ls-button">CONTROLS</a>
-        <a href="#" class="ls-bar-item ls-button">VISUALS</a>
-      </div>
-    </div>
-    <!-- About -->
-    <a href="#about" class="ls-bar-item ls-button ls-padding-large ls-hide-small">ABOUT</a>
-    <a href="javascript:void(0)" class="ls-padding-large ls-hover-red ls-hide-small ls-right"><i class="fa fa-search"></i></a>
+  <div class="ls-bar" id="Menu">
+    <a class="ls-bar-item ls-button ls-hover-black ls-hide-medium ls-hide-large ls-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#title" class="ls-bar-item ls-button">TITLE</a>
+    <a href="#embark" class="ls-bar-item ls-button ls-hide-small">EMBARK </a>
+    <a href="#outfit" class="ls-bar-item ls-button ls-hide-small"> OUTFIT</a>
+    <a href="#achievements" class="ls-bar-item ls-button ls-hide-small"> ACHIEVEMENTS</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="MenuMobile" class="ls-bar-block ls-white ls-hide ls-hide-large ls-hide-medium">
+    <a href="#about" class="ls-bar-item ls-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="ls-bar-item ls-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="ls-bar-item ls-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="ls-bar-item ls-button">SEARCH</a>
   </div>
 </div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="ls-bar-block ls-black ls-hide ls-hide-large ls-hide-medium ls-top" style="margin-top:46px">
-  <a href="#band" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">TITLE</a>
-  <a href="#tour" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">EMBARK</a>
-  <a href="#contact" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">OUTFIT</a>
-  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">STATISTICS</a>
-  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">ACHIEVEMENTS</a>
-  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">SETTINGS</a>
-  <a href="#" class="ls-bar-item ls-button ls-padding-large" onclick="myFunction()">ABOUT</a>
-</div>
-
-<!-- Page content -->
-<div class="ls-content" style="max-width:2000px;margin-top:46px">
-  
-<!-- Background Image -->
-<div class="ls-bgimg ls-display-container ls-opacity-min">
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg ls-display-container ls-opacity-min" id="Title">
   <div class="ls-display-middle" style="white-space:nowrap;">
-    <span class="ls-center ls-padding-large ls-black ls-xlarge ls-wide ls-animate-opacity"> TESTING </span>
+    <span class="ls-center ls-padding-large ls-black ls-xlarge ls-wide ls-animate-opacity">MY <span class="ls-hide-small">WEBSITE</span> LOGO</span>
   </div>
 </div>
-
-  <!-- Main Section -->
-  <div class="ls-container ls-content ls-center ls-padding-64" style="max-width:800px" id="band">
-    <h2 class="ls-wide">BRIGHT STAR: LAST STAND</h2>
-    <p class="ls-opacity"><i>Action Roguelike</i></p>
-    <p class="ls-justify">Set 30,000 years in the future in the Cygnus Sector of the Milky Way galaxy, mankind has all but forgotten about earth and the sol system. Colonists from ancient arkships have started to reach for the stars, creating new star nations. The United System of Cygnus, or the Union, continues to expand its borders, but is being pushed back by rampant piracy on the frontier border systems. The only thing standing between order and chaos are the brave men and women of the Union Navy, tasked with holding the frontier and maintaining law and order.</p> 
-    <p class="ls-justify">
-BrightStar: Last stand is an action roguelike set in the Brightstar universe. You are a Union Navy captain on the frontier with your starship in maintenance, when you are suddenly alerted to the presence of a pirate attack. With a stripped down ship, you abandon the only Union outpost in the system desperately trying to survive while gathering enough intelligence on the enemy so the relief forces stand a fighting chance.</p> 
-    <p class="ls-justify">
-The game is currently in development and this is a proof-of-concept prototype.</p>
-    <div class="ls-row ls-padding-32">
-      <div class="ls-third">
-        <p>HANDLING</p>
-        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_1.png" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="ls-third">
-        <p>ENGINES</p>
-        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_2.png" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="ls-third">
-        <p>ARMOUR</p>
-        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_3.PNG" class="ls-round ls-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="ls-third">
-        <p>ARMAMENTS</p>
-        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_4.png" class="ls-round" alt="Random Name" style="width:60%">
-      </div>
-      <div class="ls-third">
-        <p>THRUSTERS</p>
-        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_5.png" class="ls-round" alt="Random Name" style="width:60%">
-      </div>
-      <div class="ls-third">
-        <p>MUNITIONS</p>
-        <img src="https://majorredux.github.io/laststand.github.io/images/icons/ico_6.png" class="ls-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-
-
-
-
 
 </body>
 </html>

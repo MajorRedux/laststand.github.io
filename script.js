@@ -1,33 +1,21 @@
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("Menu");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "ls-bar" + " ls-card" + " ls-animate-top" + " ls-white";
+    } else {
+        navbar.className = navbar.className.replace(" ls-card ls-animate-top ls-white", "");
+    }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
+function toggleFunction() {
+  var x = document.getElementById("MenuMobile");
   if (x.className.indexOf("ls-show") == -1) {
-    x.className += " ls-show";
-  } else { 
-    x.className = x.className.replace(" ls-show", "");
+      x.className += " ls-show";
+  } else {
+      x.className = x.className.replace(" ls-show", "");
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
