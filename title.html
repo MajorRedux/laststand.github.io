@@ -8,43 +8,65 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
-
-  
-<!-- Navbar (sit on top) -->
+<!-- Navigation Menu -->
 <div class="ls-center ls-top">
-  <nav class="ls-bar" id="Menu">
+  <div class="ls-bar" id="Menu">
     <a class="ls-bar-item ls-button ls-hover-black ls-hide-medium ls-hide-large ls-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="/title.html" class="ls-bar-item ls-button">TITLE</a>
-    <a href="/embark.html" class="ls-bar-item ls-button">EMBARK </a>
-    <a href="#outfit" class="ls-bar-item ls-button"> OUTFIT</a>
-    <a href="#statistics" class="ls-bar-item ls-button"> STATISTICS</a>
-    <a href="#achievements" class="ls-bar-item ls-button"> ACHIEVEMENTS</a>
-    <a href="#settings" class="ls-bar-item ls-button"> SETTINGS</a>
-    <a href="/about.html" class="ls-bar-item ls-button"> ABOUT</a>
-    </a>
-  </nav>
+    <nav class="ls-nav">
+      <a href="/title.html" class="ls-bar-item ls-button">TITLE</a>
+      <a href="/embark.html" class="ls-bar-item ls-button">EMBARK </a>
+      <a href="/outfit.html" class="ls-bar-item ls-button"> OUTFIT</a>
+      <a href="/statistics.html" class="ls-bar-item ls-button"> STATISTICS</a>
+      <a href="/achievements.html" class="ls-bar-item ls-button"> ACHIEVEMENTS</a>
+      <a href="/settings.html" class="ls-bar-item ls-button"> SETTINGS</a>
+      <a href="/about.html" class="ls-bar-item ls-button"> ABOUT</a>
+    </nav>
+  </div>
 
-  <!-- Navbar on small screens -->
+  <!-- Navigation Menu for Small Screens and Mobile-->
   <div id="MenuMobile" class="ls-bar-block ls-white ls-hide ls-hide-large ls-hide-medium">
-    <a href="#title" class="ls-bar-item ls-button" onclick="toggleFunction()">TITLE</a>
-    <a href="#embark" class="ls-bar-item ls-button" onclick="toggleFunction()">EMBARK</a>
-    <a href="#outfit" class="ls-bar-item ls-button" onclick="toggleFunction()">OUTFIT</a>
-    <a href="#achievements" class="ls-bar-item ls-button" onclick="toggleFunction()"> ACHIEVEMENTS</a>
+    <a href="/title.html" class="ls-bar-item ls-button" onclick="toggleFunction()">TITLE</a>
+    <a href="/embark.html" class="ls-bar-item ls-button" onclick="toggleFunction()">EMBARK</a>
+    <a href="/outfit.html" class="ls-bar-item ls-button" onclick="toggleFunction()">OUTFIT</a>
+    <a href="/statistics.html" class="ls-bar-item ls-button" onclick="toggleFunction()">STATISTICS</a>
+    <a href="/achievements.html" class="ls-bar-item ls-button" onclick="toggleFunction()">ACHIEVEMENTS</a>
+    <a href="/settings.html" class="ls-bar-item ls-button" onclick="toggleFunction()">SETTINGS</a>
+    <a href="/about.html" class="ls-bar-item ls-button" onclick="toggleFunction()">ABOUT</a>
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- Background Image and Body Content -->
 <div class="ls-bgimg ls-display-container ls-opacity-min" id="Title">
   <div class="ls-display-middle" style="white-space:nowrap;">
     <span class="ls-center ls-padding-large ls-animate-opacity ls-image"><img src="images/lastStand.png" alt="Title"></span>
   </div>
 </div>
+
+<!-- Meta-Currency Tracker (Randomly Generated) -->
+<div class="ls-display-container ls-opacity-min" id="KeyboardShortcuts">
+  <div class="ls-display-bottomleft" style="white-space:nowrap;">
+    <span class="ls-padding-large ls-animate-opacity ls-image">
+      <p class="ls-uppercase ls-splashText"><span class="ls-textBorder">D</span> <span class="ls-textBorder">0</span>    
+    </p></span>
+  </div>
+</div>
+
+<!-- Keyboard Shortcuts -->
+<div class="ls-display-container ls-opacity-min" id="KeyboardShortcuts">
+  <div class="ls-display-bottomright" style="white-space:nowrap;">
+    <span class="ls-padding-large ls-animate-opacity ls-image">
+      <p class="ls-uppercase ls-splashText"><span class="ls-shortcutBorder">D</span> Next Page <span class="ls-shortcutBorder">ESC</span> TITLE     
+    </p></span>
+  </div>
+</div>
+
 
 </body>
 </html>
