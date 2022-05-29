@@ -195,12 +195,12 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* Create a Parallax Effect */
-.bgimg {
+.ls-bgimg {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('/images/game_bg.png');
+  background-image: url('images/game_bg.png');
   min-height: 100%;
 }
 
