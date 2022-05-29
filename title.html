@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BrightStar: Last Stand</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+
+  
+<!-- Navbar (sit on top) -->
+<div class="ls-center ls-top">
+  <nav class="ls-bar" id="Menu">
+    <a class="ls-bar-item ls-button ls-hover-black ls-hide-medium ls-hide-large ls-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/title.html" class="ls-bar-item ls-button">TITLE</a>
+    <a href="/embark.html" class="ls-bar-item ls-button">EMBARK </a>
+    <a href="#outfit" class="ls-bar-item ls-button"> OUTFIT</a>
+    <a href="#statistics" class="ls-bar-item ls-button"> STATISTICS</a>
+    <a href="#achievements" class="ls-bar-item ls-button"> ACHIEVEMENTS</a>
+    <a href="#settings" class="ls-bar-item ls-button"> SETTINGS</a>
+    <a href="/about.html" class="ls-bar-item ls-button"> ABOUT</a>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens -->
+  <div id="MenuMobile" class="ls-bar-block ls-white ls-hide ls-hide-large ls-hide-medium">
+    <a href="#title" class="ls-bar-item ls-button" onclick="toggleFunction()">TITLE</a>
+    <a href="#embark" class="ls-bar-item ls-button" onclick="toggleFunction()">EMBARK</a>
+    <a href="#outfit" class="ls-bar-item ls-button" onclick="toggleFunction()">OUTFIT</a>
+    <a href="#achievements" class="ls-bar-item ls-button" onclick="toggleFunction()"> ACHIEVEMENTS</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg ls-display-container ls-opacity-min" id="Title">
+  <div class="ls-display-middle" style="white-space:nowrap;">
+    <span class="ls-center ls-padding-large ls-animate-opacity ls-image"><img src="images/lastStand.png" alt="Title"></span>
+  </div>
+</div>
+
+</body>
+</html>

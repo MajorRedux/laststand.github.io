@@ -1,11 +1,11 @@
-// Change style of navbar on scroll
+// Change style of menu on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
-    var navbar = document.getElementById("Menu");
+    var menu = document.getElementById("Menu");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "ls-bar" + " ls-card" + " ls-animate-top" + " ls-white";
+        menu.className = "ls-bar" + " ls-card" + " ls-animate-top" + " ls-white";
     } else {
-        navbar.className = navbar.className.replace(" ls-card ls-animate-top ls-white", "");
+        menu.className = menu.className.replace(" ls-card ls-animate-top ls-white", "");
     }
 }
 
@@ -19,3 +19,22 @@ function toggleFunction() {
   }
 }
 
+// Managers navigation using keys
+document.addEventListener('keydown',function(event){
+    if(window.location.pathname == "/index.html") {
+        if(event.code === 'Space') {
+            location="/title.html"
+        }
+
+    }
+
+})
+
+// Sets current menu item to active
+const current = 0;
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href === document.URL) {
+        current = i;
+    }
+}
+document.links[current].className = 'ls-current';
